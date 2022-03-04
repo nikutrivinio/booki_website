@@ -1,0 +1,961 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.nav-link{
+    padding-right: 30px;
+}
+.nav-link:hover{
+    border-top: solid blue 2px;
+}
+
+.nav-link:visited{
+    border-top: solid blue 2px;
+    color: blue;
+}
+
+h3 {
+    margin-left: 3rem;
+}
+
+h5 {
+    margin-left: 3rem;
+    font-weight: 900;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: black;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    margin-left: 3rem;
+    border-radius: 15px;
+    /* border: solid;
+    border-color: rgb(225, 238, 245);       */
+}
+
+
+input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+input[type="text"]
+{
+   background: #fff;
+   color: black;
+   align-items: center;
+   width: 200px;
+   height: 40px;
+   padding: 10px;
+   border: none;
+   outline: none;
+   margin-left: 10px;
+   font-weight: bold;
+}
+
+input[type="submit"]
+{
+   
+   border-radius: 0 10px 10px 0;
+   width: 80px;
+   height: 40px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   background: dodgerblue;
+   color: #fff;
+   font-weight: bold;
+   
+}
+
+.map-icon {
+   padding: 10px;
+    width: 40px;
+    height: 40px;
+    background:rgb(226, 227, 228);
+    border-radius: 10px 0 0 10px;
+    color:rgb(24, 24, 24);
+    min-width:50px;
+    text-align:center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    
+}
+
+.wrapper-filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.filters {
+    margin-left: 3rem;
+    margin-right: 4rem;
+    font-weight: 700;
+
+   
+}
+
+.icon {
+    position: relative;
+    padding:10px;
+    justify-content: space-around;
+    background: #F2F2F2;
+    border-style: solid;    
+    border-color:#F2F2F2;
+    border-radius: 50%;
+    height: 50px;
+    width: 40px;
+    color:dodgerblue;
+    min-width:50px;
+    text-align:center;
+    left: 16px;
+    
+}
+
+.filter-description {
+    padding:10px;
+    justify-content: space-around;
+    background: white;
+    border-style: solid;    
+    border-color: rgb(226, 227, 228);
+    border-left: none;
+    border-radius: 0 30px 30px 0;
+    color:black;
+    text-align:center;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter-description:hover {
+    background-color: dodgerblue;
+}
+
+.info {
+    margin-top: 30px;
+}
+
+.fa-info {
+    padding:10px;
+    justify-content: space-around;
+    background: white;
+    border-style: solid;    
+    border-color: rgb(226, 227, 228);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: dodgerblue;
+    text-align:center;
+    
+}
+
+.holdingContainer {
+    width: 100%;
+    display: flex;
+    
+   
+    
+    
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.fa-star {
+    color: blue;
+}
+.accomodation {
+    flex: 2;
+    background: #F2F2F2;
+    margin-left: 3rem;
+    margin-right: 20px;
+    padding: 30px 20px;
+    border-radius: 2%;
+
+    
+}
+
+
+
+.most-popular {
+    flex: 1;
+    background: #F2F2F2;
+    margin-right: 3rem;
+    border-radius: 2%;
+}
+
+.image-set {
+
+    width: 100%;
+    height: 14vh;
+    min-width: max-content;
+    object-fit: cover;  
+    border-radius: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    /* padding: 30px 30px 10px 0; */
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    padding: 3px 3px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.card img {
+    padding: 0.2rem;
+    padding-bottom: 10px;
+    margin: 0.1rem 0.1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.active {
+    order: -1;
+    flex: 1 0 100%;
+    margin: 0 -2rem;
+    
+}
+
+.font-marseille {
+    font-weight:bolder;
+}
+
+#show {
+    color: black;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+
+.most-popular {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.fontss {
+    font-weight:bolder;
+}
+
+.title-icon-popular {
+    margin-left: -2rem ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-chart-line {
+    font-size: 20px;
+}
+
+.popular-accomodation{
+    
+    display: flex;
+    max-width: 100%;
+    border-radius: 15px 15px ;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: left;
+    background-color: white;
+    height: auto;
+
+    
+}
+
+.container-popular {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    width: 100%;
+    max-height: max-content;
+    
+    
+    
+}
+
+
+.card-popular img {
+    padding: 0.3rem;
+    /* padding-bottom: 10px; */
+    margin: 0.1rem 0.1rem;
+    border-radius: 15px 0 0 15px;
+
+
+    
+    
+}   
+
+
+.image-popular {
+    width: 100px;
+    height: 120px;
+    min-height: auto;
+    object-fit: cover;  
+}
+
+.activities {
+    margin-top:50px;
+    margin-bottom: 30px;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    
+
+}
+
+.container-activities {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    flex-basis: auto;
+}
+
+.header-activity {
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.old-port {
+    background: white;
+    width: 25%;
+    height: 290px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow:
+  20px 20px 20px 20px rgba(0, 0, 0, 0.02)
+;
+
+}
+
+.text {
+    margin-left: 1rem;
+    font: bold;
+    font-size: 12px;
+}
+
+.port-image {
+    height: 240px;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    
+}
+
+
+.pomegues-port{
+    background: white;
+    width: 100%;
+    height: 160px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow:
+  100px 100px 80px 100px rgba(0, 0, 0, 0.02)
+}
+
+
+.pomegues-image {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.text-pomegues {
+    padding-left: 20px;
+    font-size: 12px;
+   
+}
+
+.frioul-island {
+    background: white;
+    width: 100%;
+    height: 105px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow:
+  100px 100px 80px 100px rgba(0, 0, 0, 0.02)
+}
+
+.frioul-image {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+
+.pomegues-frioul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    
+}
+
+.calanques-park {
+    background: white;
+    width: 25%;
+    height: 290px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow:
+  20px 20px 20px 20px rgba(0, 0, 0, 0.02)
+;
+
+}
+
+.text {
+    margin-left: 1rem;
+    font: bold;
+}
+
+.calanques-image {
+    height: 240px;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    
+}
+
+
+
+.longchamp{
+    background: white;
+    width: 100%;
+    height: 160px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow:
+  100px 100px 80px 100px rgba(0, 0, 0, 0.02)
+}
+
+
+.longchamp-image {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.text-pomegues {
+    padding-left: 20px;
+   
+}
+
+.notre {
+    background: white;
+    width: 100%;
+    height: 105px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow:
+  100px 100px 80px 100px rgba(0, 0, 0, 0.02)
+}
+
+.notre-image {
+    height: 80px;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+
+.notre-longchamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    
+}
+
+
+
+
+ul li{
+    list-style: none;
+    
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    width: 95%;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    margin-left: 3rem;
+    flex-wrap: wrap;
+    height: 150px;
+    margin-bottom: 20px;
+             
+}
+
+
+.footer a {
+    color: black;
+    font-size: 10px;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-right: 100px;
+    
+    
+}
+
+.dark-star {
+    color: grey;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 550px) {
+    .navbar-brand {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+    }
+
+
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        width:100%;
+        
+       
+
+    }
+
+    .nav-item {
+        text-align: center;
+        margin: auto;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    
+    
+    .nav-link:visited {
+        color: blue;
+        border-bottom: solid blue 2px ;
+    }
+
+
+    .box {
+        display: inline-block;
+        width: 80%;
+
+        margin-left: 20px;
+        
+    }
+
+    .most-popular {
+        width: 100%;
+        margin: auto;
+        
+    }
+
+
+
+    input[type="text"]{
+        width: 150px;
+        height: 40px;
+       
+    }
+
+        .filters {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+
+
+        .wrapper-filter {
+            display: flex;
+            margin-bottom: 10px;
+            margin-left: 20px;   
+        }
+
+
+    .fa-info {
+            height: 30px;
+            width: 30px;
+            font-size: 12px;
+    }
+
+    .most-popular {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .holdingContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 1rem;
+        justify-content: center;
+        
+    }
+
+    .accomodation {
+        background: none;
+        margin: 0;
+        width: 100%;
+    
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .image-set {
+        max-width: 100%;
+        height: 140px;
+        margin-bottom: 0;
+        
+
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        height: auto;
+    
+    }
+
+    .container-activities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 100%;
+        flex-basis: auto;
+       
+
+        
+    }
+    .card {
+        margin-bottom: 2px;
+        width: 100%;
+    }
+
+    .activities {
+        margin-right: -2rem;
+    }
+
+    .port-image {
+        max-width: 100%;
+        height: 160px;
+        
+    }
+
+    .old-port {
+        
+        width: 95%;
+        height: 160px;
+        margin-bottom: 3rem;
+    }
+
+    .pomegues-frioul {
+        width: 100%;
+    }
+    .pomegues-port {
+        width: 95%;
+        height: 160px;
+        margin-bottom: 3rem;
+       
+
+    }
+
+    .pomegues-image {
+        max-width: 100%;
+        height: 160px;
+    }
+
+    .frioul-island {
+        width: 95%;
+        height: 160px;
+        margin-bottom: 3rem;
+    }
+
+    .frioul-image {
+        max-width: 100%;
+        height: 160px;
+    }
+
+    .calanques-park {
+        width: 95%;
+        height: 160px;
+        margin-bottom: 3rem;
+    }
+
+    .calanques-image {
+        max-width: 100%;
+        height: 160px;
+    }
+
+    .notre-longchamp {
+        width: 100%;
+    }
+
+    .notre {
+        width: 95%;
+        height: 160px;
+        margin-bottom: 3rem;
+    }
+
+    .notre-image {
+        max-width: 100%;
+        height: 160px;
+    }
+
+    .longchamp {
+        width: 95%;
+        height: 160px;
+        margin-bottom: 3rem;
+    }
+
+    .longchamp-image {
+        max-width: 100%;
+        height: 160px;
+    }
+
+    .footer {
+        background: none;
+        margin-bottom: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+        background:#F2F2F2;
+        margin: auto;
+        
+    }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 551px) {
+
+
+    .filters {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+    .wrapper-filter {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        margin-left: 20px;   
+        justify-content: flex-start;
+        
+        
+    }
+
+
+    .icon {
+        position: relative;
+        padding:10px;
+        justify-content:flex-start;
+        background: #F2F2F2;
+        border-style: solid;    
+        border-color:#F2F2F2;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        color:dodgerblue;
+        min-width:30px;
+        text-align:center;
+        left: 16px;
+        
+    }
+    
+    .filter-description {
+        padding:5px;
+        justify-content: flex-start;
+        background: white;
+        border-style: solid;    
+        border-color: rgb(226, 227, 228);
+        border-left: none;
+        border-radius: 0 30px 30px 0;
+        color:black;
+        text-align:center;
+        padding-left: 30px;
+        padding-right: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .filter-description:hover {
+        background-color: dodgerblue;
+    }
+
+    .holdingContainer {
+        display: flex;
+        flex-direction: column;
+        margin-left: -2.5rem;
+
+    }
+ 
+    .accomodation {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container-1{
+                
+            width: 100%;
+            justify-content: space-between;       
+    }
+
+    
+
+    .card {
+        width: 32%;
+        
+    }
+
+    .image-set {
+
+        width: 100%;
+        height: 12vh;
+
+    }
+
+    .most-popular { 
+        margin-left: 3rem;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    
+    .container-activities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        
+    }
+
+    .old-port {
+        width: 45%;
+    }
+
+    .pomegues-frioul {
+        width: 45%;
+    }
+
+    .calanques-park {
+        width: 45%;
+    }
+
+    .notre-longchamp {
+        width: 45%;
+    }
+} 
+
+@media screen and (max-width: 372px) {
+
+    .box {
+        
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 298px) {
+
+
+
+    form {
+        background: orange;
+        width: 100%;
+        flex-shrink: inherit;
+        display: flex;
+    }
+
+    input[type="text"]
+{
+   
+   max-width: 100%;
+   height: auto;
+   margin: 0;
+   padding: 0;
+
+}
+    .map-icon {
+        flex-shrink: 1;
+    }
+
+    .placeholder1 {
+        flex-shrink: 2;
+    }
+
+    .search {
+        flex-shrink: 1;
+    }
+}
